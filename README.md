@@ -1,16 +1,14 @@
-# Phase 1 Project
+# Phase 1 Project: Skye Weather
 
-This is the phase 1 project of the course.
 
-    []: # Language: javascript
-    []: # Path: ./src/index.js
+    Languages: HTML, CSS & Javascript
 
-## Skye Weather
+## Description
 
-A Web application that displays the current weather for a user-defined location.
+A web application that displays the current weather for a user-defined location.
+
 This application uses the OpenWeatherMap API to retrieve the current weather.
 
-Some of the deliverables of this project are:
 
 ## Deliverables
 
@@ -28,12 +26,19 @@ Some of the deliverables of this project are:
 
 ### Bonus Deliverable
 
-- The application should be able to display the current weather for multiple cities at the same time.
 - The application should show a loading indicator while the weather is being retrieved.
 - The application should be able to display an error message if the user enters an invalid city name.
 - The application should display weather data for the next 5 days.
-
+- The application should be able to display the current weather for multiple cities at the same time.
 
 
 
 > Changes Occurring...
+
+
+
+### Images Placeholder
+![](./src/images/screenshots/)
+
+### URL Placeholder
+- [Project URL](https://github.com/ESPersonnel)
