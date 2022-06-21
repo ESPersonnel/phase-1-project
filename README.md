@@ -35,10 +35,31 @@ Some of the deliverables of this project are:
 
 > Changes Occurring...
 
+<br /> <br />
 
+> For later usage...
 
 ### Images Placeholder
 ![](./src/images/screenshots/)
 
 ### URL Placeholder
 - [Project URL](https://github.com/ESPersonnel)
+
+### Code Placeholder
+```
+some code
+```
+
+### License Placeholder
+- [License]()
+
+### Table Placeholder
+| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+| Text     | Text     | Text     |
+| Text     | Text     | Text     |
+| Text     | Text     | Text     |
+
+## Known Bugs
+
+## Contact Info
