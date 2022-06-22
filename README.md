@@ -1,6 +1,8 @@
 # Phase 1 Project: Skye Weather
 
 
+    Author: Wycliffe Ndiba
+
     Languages: HTML, CSS & Javascript
 
 ## Description
@@ -9,6 +11,11 @@ A web application that displays the current weather for a user-defined location.
 
 This application uses the OpenWeatherMap API to retrieve the current weather.
 
+## Setup
+
+Simply run this link:
+
+Vercel URL: [URL Pending]
 
 ## Deliverables
 
