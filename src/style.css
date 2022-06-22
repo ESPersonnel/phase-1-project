@@ -21,7 +21,21 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.bg-image {
+.blur{
+    filter: 3px;
+}
+#overlay    {
+    position: fixed;
+    display: none;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(255,255,255,.8);
+    z-index: 999;
+}
+
+/* .bg-image {
     background-image: url("https://source.unsplash.com/random/1920x1080?nature,landscape");
     background-size: cover;
     background-position: center;
@@ -32,8 +46,9 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    filter: blur(8px);
-}
+    filter: blur(2px);
+} */
+
 
 .card {
     background: #000000d0;
@@ -83,4 +98,19 @@ button:hover {
 h1.temp {
     font-size: 2em;
     margin: 0;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
 }
