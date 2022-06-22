@@ -30,6 +30,7 @@ Some of the deliverables of this project are:
 - The application should be able to display an error message if the user enters an invalid city name.
 - The application should display weather data for the next 5 days.
 - The application should be able to display the current weather for multiple cities at the same time.
+- The application should show weather conditions that happened in the past.
 
 
 
