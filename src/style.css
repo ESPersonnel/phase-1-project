@@ -102,6 +102,7 @@ h1.temp {
 
 .five-day {
     display: flex;
+    background: #00808040;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -119,6 +120,7 @@ h1.temp {
 
 .day {
     display: flex;
+    background: #00808070;
     flex-direction: column;
     justify-content: center;
     align-items: center;

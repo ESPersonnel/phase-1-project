@@ -21,6 +21,11 @@ let weather = {
         document.querySelector('.wind').innerText = "Wind Speed: " + speed + "km/h";
         document.querySelector('.weather').classList.remove("loading");
         document.body.style.backgroundImage = "url('https://source.unsplash.com/random/1920x1080?" + name + ",sky,landscape')";
+        document.querySelector('.day-icon').src = 'https://openweathermap.org/img/wn/'+ icon +'@2x.png';
+        document.querySelector('.day-description').innerText = description;
+        document.querySelector('.day-temp').innerText = temp + "°C";
+        document.querySelector('.day-humidity').innerText = "Humidity: " + humidity + "%";
+        document.querySelector('.day-wind').innerText = "Wind Speed: " + speed + "km/h";
     },
     search: function(){
         this.fetchWeather(document.querySelector('.search-bar').value)
@@ -32,8 +37,10 @@ document.querySelector(".search button").addEventListener("click", function() {
 });
 
 document.querySelector(".search-bar").addEventListener("keyup", function(event) {
+    const searchBar = document.querySelector(".search-bar");
     if (event.keyCode === 13) {
         weather.search();
+        searchBar.value = "";
     }
 })
 
