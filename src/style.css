@@ -35,7 +35,7 @@ section {
     background: #000000d0;
     color: white;
     padding: 2em;
-    border-radius: 8px;
+    border-radius: 1px;
     width: 100%;
     max-width: 420px;
     margin: 1em;
@@ -66,8 +66,8 @@ button {
 input.search-bar {
     border: none;
     outline: none;
-    padding: .2em 1em;
-    border-radius: 3px;
+    padding: .3em 1em;
+    border-radius: 2px;
     background-color: #7c7c7c2b;
     color: white;
     font-family: inherit;
@@ -132,8 +132,12 @@ h1.temp {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 1;
+    transition: 0.2 ease-in-out;
 }
 
+.day:hover {
+    transform: scale(1.1);
+}
 
 .day-name {
     font-size: 1.2em;
@@ -145,14 +149,24 @@ h1.temp {
     z-index: 1;
 }
 
+.day-temp {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 52px;
+    left: 22px;
+    z-index: 1;
+}
+
 .day-icon {
     width: 80px;
     height: 80px;
     margin: 0;
     padding: 0;
     position: relative;
-    top: 26px;
-    left: 90px;
+    top: 2px;
+    left: 105px;
     z-index: 1;
 }
 
@@ -161,8 +175,8 @@ h1.temp {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 57px;
-    right: 93px;
+    top: 75px;
+    left: 270px;
     z-index: 1;
 }
 
@@ -171,6 +185,8 @@ h1.temp {
     margin: 0;
     padding: 0;
     position: relative;
+    top: -26px;
+    left: -53px;
     z-index: 1;
 }
 
@@ -179,5 +195,7 @@ h1.temp {
     margin: 0;
     padding: 0;
     position: relative;
+    top: -11px;
+    left: -29px;
     z-index: 1;
 }
