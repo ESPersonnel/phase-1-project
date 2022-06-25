@@ -15,7 +15,7 @@ This application uses the OpenWeatherMap API to retrieve the current weather.
 
 Simply run this link:
 
-Vercel URL: [URL Pending]
+Vercel URL: [Skye Weather](https://skye-weather-espersonnel.vercel.app/)
 
 ## Deliverables
 
@@ -47,6 +47,8 @@ Some of the deliverables of this project are:
 
 - The application can search for a city in the search bar.
 - The user can either use the Enter key or the search button provided.
+- The application can fetch data from the openweathermap API. (Free version)
+- The application fetches new background images from Unsplash API.
 - The application displays:
     - the city's name
     - temperature in °C
