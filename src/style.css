@@ -100,7 +100,7 @@ h1.temp {
 }
 
 
-.five-day {
+/* .five-day {
     display: flex;
     background: #00808040;
     flex-direction: column;
@@ -198,4 +198,4 @@ h1.temp {
     top: -11px;
     left: -29px;
     z-index: 1;
-}
+} */
