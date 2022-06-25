@@ -56,36 +56,19 @@ Some of the deliverables of this project are:
     - the wind speed.
 - Currently working on getting the date and time to function.
 
+## Screenshots
+
+Screenshot showing the features that currently work.
+
+<img src="./src/images/screenshots/day-current-forecast.png" width="600px">
+
+Screenshot with the Current Weather forecast as well as future (5-day) forecast [Feature rolled back for now].
+
+<img src="./src/images/screenshots/day-current-future-forecast.png" width="600px">
+
 ### Rollback
 - Rolling back the 5 day forecast till I can understand the logic behind it.
 
-> Changes Occurring...
+## License
+- [License](./LICENSE)
 
-<br /> <br />
-
-> For later usage...
-
-### Images Placeholder
-![](./src/images/screenshots/)
-
-### URL Placeholder
-- [Project URL](https://github.com/ESPersonnel)
-
-### Code Placeholder
-```
-some code
-```
-
-### License Placeholder
-- [License]()
-
-### Table Placeholder
-| Column 1 | Column 2 | Column 3 |
-| -------- | -------- | -------- |
-| Text     | Text     | Text     |
-| Text     | Text     | Text     |
-| Text     | Text     | Text     |
-
-## Known Bugs
-
-## Contact Info
