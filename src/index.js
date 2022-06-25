@@ -44,8 +44,10 @@ weather.fetchWeather("Nairobi")
 // Date and Time
 const timeEl = document.getElementById("time");
 const dateEl = document.getElementById("date");
+const fiveDayEl = document.getElementById("five-day");
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
 
 setDateTime(() => {
     const time = new Date();
@@ -66,7 +68,30 @@ setDateTime(() => {
 }, 1000);
 
 
-// Future forecast function
-// Should display the weather for the next 5 days
-// Should
-function futureForecast
+// function futureForecast(){
+//     let otherDays = ''
+//     data.daily.forEach((day, idx) => {
+//         if(idx == 0){
+//             currentTempEl.innerHTML = `
+//             <div class="day-name">${days[day.day]}</div>
+//             <div class="icon"><img src="https://openweathermap.org/img/wn/${day.weather[0].
+//             icon}@2x.png"></div>
+//             <div class="day-description">${day.weather[0].description}</div>
+//             <div class="day-temp">${day.temp.day}°C</div>
+//             <div class="day-humidity">Humidity: ${day.humidity}%</div>
+//             <div class="day-wind">Wind Speed: ${day.wind_speed}km/h</div>
+//             `
+//         } else {
+//             otherDays += `
+//             <div class="day-name">${days[day.day]}</div>
+//             <div class="icon"><img src="https://openweathermap.org/img/wn/${day.weather[0].
+//             icon}@2x.png"></div>
+//             <div class="day-description">${day.weather[0].description}</div>
+//             <div class="day-temp">${day.temp.day}°C</div>
+//             <div class="day-humidity">Humidity: ${day.humidity}%</div>
+//             <div class="day-wind">Wind Speed: ${day.wind_speed}km/h</div>
+//             `
+//         }
+//     });
+//     fiveDayEl.innerHTML = otherDays;
+// }
