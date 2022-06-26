@@ -68,6 +68,10 @@ Some of the deliverables of this project are:
 
 ## Screenshots
 
+### GIF of the application
+
+<img src="./src/gifs/Project-Preview.gif" width="600px">
+
 Screenshot showing the features that currently work.
 
 <img src="./src/images/screenshots/day-current-forecast-1.png" width="600px">
