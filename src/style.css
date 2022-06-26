@@ -51,6 +51,7 @@ section {
     align-items: center;
     flex-direction: column;
     margin-bottom: 0.5em;
+    background: #00808020;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2rem;
@@ -101,9 +102,9 @@ h1.temp {
     margin: 0;
 }
 
-.icon {
+/* .icon {
     transform: scale(1.5);
-}
+} */
 
 .weather.loading{
     visibility: hidden;
@@ -121,14 +122,14 @@ h1.temp {
 }
 
 .details {
-    background: #000000d4;
+    background: #00000080;
     color: white;
     padding: 2em;
     border-radius: 1px;
     width: inherit;
     height: 350px;
     margin: 0;
-    margin-top: 0.3em;
+    margin-top: 0.5em;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 1;
