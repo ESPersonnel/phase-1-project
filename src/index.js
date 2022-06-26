@@ -15,14 +15,14 @@ let weather = {
         const { time } = data.dt;
         console.log(name, icon, description, temp, humidity, speed, time);
         document.querySelector('.city').innerText = "Weather in " + name;
-        document.querySelector('.icon').src = 'https://openweathermap.org/img/wn/'+ icon +'.png';
+        document.querySelector('.icon').src = 'https://openweathermap.org/img/wn/'+ icon +'@2x.png';
         document.querySelector('.description').innerText = description;
         document.querySelector('.temp').innerText = Math.round(temp) + "°C";
         document.querySelector('.humidity').innerText = "Humidity: " + humidity + "%";
         document.querySelector('.wind').innerText = "Wind Speed: " + speed + "km/h";
         document.querySelector('.weather').classList.remove("loading");
-        document.querySelector('.time').innerText = "Time: " + new Date().toLocaleTimeString();
-        document.querySelector('.date').innerText = "Date: " + new Date().toLocaleDateString();
+        document.querySelector('.time').innerText = new Date().toLocaleTimeString();
+        document.querySelector('.date').innerText = new Date().toLocaleDateString();
         // Converting epoch time to human readable time
         // document.querySelector('.time').innerText = "Time: " + new Date(time).toLocaleTimeString();
         // document.querySelector('.date').innerText = "Date: " + new Date(time).toLocaleDateString();
@@ -33,18 +33,22 @@ let weather = {
     }
 }
 
+// Event Listener for search button
 document.querySelector(".search button").addEventListener("click", function() {
     weather.search();
 });
 
+// Function for the enter key to search
 document.querySelector(".search-bar").addEventListener("keyup", function(event) {
     const searchBar = document.querySelector(".search-bar");
     if (event.keyCode === 13) {
         weather.search();
+        // Clear search bar text
         searchBar.value = "";
     }
 })
 
+// Default search
 weather.fetchWeather("Nairobi")
 
 // Five Day Forecast API call
