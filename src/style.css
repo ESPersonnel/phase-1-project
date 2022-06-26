@@ -120,6 +120,21 @@ h1.temp {
     left: 20px;
 }
 
+.details {
+    background: #000000d4;
+    color: white;
+    padding: 2em;
+    border-radius: 1px;
+    width: inherit;
+    height: 350px;
+    margin: 0;
+    margin-top: 0.3em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+
+}
+
 footer {
     display: flex;
     justify-content: center;
