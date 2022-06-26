@@ -13,9 +13,17 @@ This application uses the OpenWeatherMap API to retrieve the current weather.
 
 ## Setup
 
-Simply run this link:
+### Live Link:
+[Skye Weather](https://skye-weather-espersonnel.vercel.app/)
 
-Vercel URL: [Skye Weather](https://skye-weather-espersonnel.vercel.app/)
+### Setup
+Install Vercel CLI:
+
+    npm install -g vercel
+
+Run Vercel CLI:
+
+    vercel dev
 
 ## Deliverables
 
@@ -62,14 +70,27 @@ Some of the deliverables of this project are:
 
 Screenshot showing the features that currently work.
 
-<img src="./src/images/screenshots/day-current-forecast.png" width="600px">
+<img src="./src/images/screenshots/day-current-forecast-1.png" width="600px">
 
-Screenshot with the Current Weather forecast as well as future (5-day) forecast [Feature rolled back for now].
+
+## Known Bugs
+> Bug 1
+
+The Date and Time feature is currently not working.
+
+The application does not display the current time for a city that is searched.
+
+It instead, displays the device's current time.
+
+> Bug 2
+
+The application is not fully responsive to small screens.
+
+## Rollback
+- Rolling back the 5 day forecast till I can understand the logic behind it.
 
 <img src="./src/images/screenshots/day-current-future-forecast.png" width="600px">
 
-### Rollback
-- Rolling back the 5 day forecast till I can understand the logic behind it.
 
 ## License
 - [License](./LICENSE)
