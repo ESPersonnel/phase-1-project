@@ -52,4 +52,15 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event) 
 weather.fetchWeather("Nairobi")
 
 // Five Day Forecast API call
-//https://api.openweathermap.org/data/2.5/forecast?q=Nairobi&units=metric&appid=834b35552fcfb0c0071704a4c517816d
+// https://api.openweathermap.org/data/2.5/forecast?q=Nairobi&units=metric&appid=834b35552fcfb0c0071704a4c517816d
+
+let forecast = {
+    fetchForecast: function(city){
+        fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${weather.apiKey}`)
+        .then((response) => response.json())
+        .then((data) => this.displayForecast(data))
+    },
+    displayForecast: function(data){
+        
+    }
+}
