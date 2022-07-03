@@ -55,12 +55,19 @@ weather.fetchWeather("Nairobi")
 // https://api.openweathermap.org/data/2.5/forecast?q=Nairobi&units=metric&appid=834b35552fcfb0c0071704a4c517816d
 
 let forecast = {
+    apiKey: '834b35552fcfb0c0071704a4c517816d',
     fetchForecast: function(city){
         fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${weather.apiKey}`)
         .then((response) => response.json())
         .then((data) => this.displayForecast(data))
     },
     displayForecast: function(data){
+        const { name } = data;
+        const { icon, description } = data.weather;
+        const { temp, humidity, temp_min, temp_max } = data.main;
+        const { speed, deg } = data.wind;
+        const { time } = data.dt;
+        console.log(name, icon, description, temp, humidity, temp_min, temp_max, speed, deg, time);
         
     }
 }
