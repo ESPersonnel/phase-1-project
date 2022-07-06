@@ -68,6 +68,19 @@ let forecast = {
         const { speed, deg } = data.wind;
         const { time } = data.dt;
         console.log(name, icon, description, temp, humidity, temp_min, temp_max, speed, deg, time);
-        
+        document.querySelector('.fore-place').innerText = name;
+        document.querySelector('.fore-temp').innerText = Math.round(temp) + "°C";
+        document.querySelector('.fore-icon').src = 'https://openweathermap.org/img/wn/'+ icon +'@2x.png';
+        document.querySelector('.fore-description').innerText = description;
+        document.querySelector('.fore-humidity').innerText = "Humidity: " + humidity + "%";
+        document.querySelector('.fore-wind').innerText = "Wind Speed: " + speed + "km/h";
+        document.querySelector('.fore-wind_dir').innerText = "Wind Direction: " + deg + "°";
+        document.querySelector('.fore-temp_min').innerText = "Min Temp: " + Math.round(temp_min) + "°C";
+        document.querySelector('.fore-temp_max').innerText = "Max Temp: " + Math.round(temp_max) + "°C";
+        document.querySelector('.fore-time').innerText = new Date().toLocaleTimeString();
+        document.querySelector('.fore-date').innerText = new Date().toLocaleDateString('en-UK', {weekday: 'long'});
     }
 }
+
+forecast.fetchForecast("Nairobi")
+
