@@ -19,7 +19,7 @@ let weather = {
         document.querySelector('.description').innerText = description;
         document.querySelector('.temp').innerText = Math.round(temp) + "°C";
         document.querySelector('.humidity').innerText = "Humidity: " + humidity + "%";
-        document.querySelector('.wind').innerText = "Wind Speed: " + speed + "km/h";
+        document.querySelector('.wind').innerText = "Wind Speed: " + Math.round(speed) + "km/h";
         document.querySelector('.weather').classList.remove("loading");
         document.querySelector('.time').innerText = new Date().toLocaleTimeString();
         document.querySelector('.date').innerText = new Date().toLocaleDateString();
